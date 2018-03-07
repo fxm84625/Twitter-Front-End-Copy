@@ -1,0 +1,123 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Twitter 2.0</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+
+	<link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">Twitter 2.0</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Me</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 submit-button" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <form id="submit-main-container">
+    <textarea rows="3" id="tweet-input-box" class="form-control" type="text" placeholder="Enter Tweet..." ></textarea>
+    <div id="char-error-text" class="error-text collapse">Maximum 140 characters</div>
+    <div id="submit-container" class="collapse">
+      <strong id="submit-tweets"    class="med-number">0</strong> <span class="sm-text">Tweets</span>
+      <strong id="submit-following" class="med-number">91</strong> <span class="sm-text">Following</span>
+      <strong id="submit-followers" class="med-number">10,230</strong> <span class="sm-text">Followers</span>
+      <span id="char-count">0</span>
+      <button id="input-submit-button" class="btn btn-danger">Submit</button>
+    </div>
+  </form>
+  <div id="message-list-container">
+    
+    <div class="message-container">   <!-- Tweet 1 -->
+      <div class="message-container-header">
+        <img src="https://marketing.twitter.com/content/dam/marketing-twitter/brand/logo.png" height="100" width="100"/>
+        <div class="tweet-container">
+          <div class="tweet-container-header">
+            <span class="display-name">Might</span>
+            <span class="handle-name">@Guy</span>
+            <span class="tweet-date">Jun 20</span>
+            <div class="tweet-msg">Hello</div>
+          </div>
+          <div class="tweet-container-controls">
+            <a href='#' class="tweet-expand-info">Expand</a>
+            <a href='#' class="show-tweet-control-hover collapse">Favorite</a>
+            <a href='#' class="show-tweet-control-hover collapse">Retweet</a>
+            <a href='#' class="show-tweet-control-hover collapse">Reply</a>
+          </div>
+        </div>
+      </div>
+      <div class="message-container-info collapse">
+        <strong class="tweet-retweets  med-number">12</strong> <span class="sm-text">Retweets</span>
+        <strong class="tweet-favorites med-number">5</strong> <span class="sm-text">Favorites</span>
+        <span class="tweet-info-pics">
+          <img src="https://pbs.twimg.com/profile_images/926184352051892224/pJQvyl-J_400x400.jpg"/>
+          <img src="https://image.flaticon.com/icons/svg/23/23931.svg"/>
+          <img src="https://marketing.twitter.com/content/dam/marketing-twitter/brand/logo.png"/>
+        </span>
+      </div>
+    </div>    <!-- End of Tweet 1 -->
+    
+    <div class="message-container">   <!-- Tweet 2 -->
+      <div class="message-container-header">
+        <img src="https://pbs.twimg.com/profile_images/926184352051892224/pJQvyl-J_400x400.jpg" height="100" width="100"/>
+        <div class="tweet-container">
+          <div class="tweet-container-header">
+            <span class="display-name">Super</span>
+            <span class="handle-name">@Mario</span>
+            <span class="tweet-date">Sep 12</span>
+            <div class="tweet-msg">Wah</div>
+          </div>
+          <div class="tweet-container-controls">
+            <a href='#' class="tweet-expand-info">Expand</a>
+            <a href='#' class="show-tweet-control-hover collapse">Favorite</a>
+            <a href='#' class="show-tweet-control-hover collapse">Retweet</a>
+            <a href='#' class="show-tweet-control-hover collapse">Reply</a>
+          </div>
+        </div>
+      </div>
+      <div class="message-container-info collapse">
+        <strong class="tweet-retweets  med-number">9</strong> <span class="sm-text">Retweets</span>
+        <strong class="tweet-favorites med-number">8</strong> <span class="sm-text">Favorites</span>
+        <span class="tweet-info-pics">
+          <img src="https://pbs.twimg.com/profile_images/926184352051892224/pJQvyl-J_400x400.jpg"/>
+          <img src="https://marketing.twitter.com/content/dam/marketing-twitter/brand/logo.png"/>
+        </span>
+      </div>
+    </div>    <!-- End of Tweet 2 -->
+    
+  </div>    <!-- End of Tweet List -->
+</body>
+
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</html>

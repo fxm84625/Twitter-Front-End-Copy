@@ -1,0 +1,131 @@
+nav {
+  background-color: white;
+}
+
+body {
+  background-color: #0084b4;
+}
+
+#submit-main-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: #DDD;
+  margin-top: 20px;
+  padding: 15px;
+  width: 500px;
+}
+
+#submit-container {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#char-count {
+  margin-left: auto;
+  margin-right: 10px;
+  color: #888;
+}
+
+.message-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 7px;
+  background-color: #DDD;
+  margin-top: 20px;
+  padding: 15px;
+  width: 500px;
+}
+
+.message-container-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-date {
+  flex: none;
+  float: right;
+  color: #888;
+}
+
+.tweet-container-header {
+  flex: 3;
+}
+
+.tweet-container-controls {
+  flex: 1;
+}
+
+.message-container-info {
+  margin-top: 5px;
+  padding-left: 110px;
+}
+
+.show-tweet-control-hover {
+  color: #666;
+  display: inline-block;
+  float: right;
+  padding-left: 40px;
+}
+
+.tweet-info-pics img {
+  flex: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 0px;
+  border-radius: 2px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red !important;
+}
+
+.med-number {
+  font-size: 18px;
+}
+
+.sm-text {
+  padding: 0 15px 0 5px;
+  color: #666;
+}
+
+textarea {
+  resize: none;
+}
+
+.collapse {
+  display: none !important;
+}
+
+img {
+  flex: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.display-name {
+  font-weight: bold;
+  
+}
+
+.handle-name {
+  color: #666;
+}
